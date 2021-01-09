@@ -52,5 +52,8 @@
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
   });
-
+  $(document).ready(function() {
+    $('#uye-cinsiyet').select2();
+    $('#uye-bolum').select2();
+  });
 })(jQuery); // End of use strict
