@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54f5628b-7bd0-4773-8aa6-1113c09f74c6" name="Default Changelist" comment="select2 fremework added">
-      <change afterPath="$PROJECT_DIR$/controller/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uyeekle.php" beforeDir="false" afterPath="$PROJECT_DIR$/uyeekle.php" afterDir="false" />
-    </list>
+    <list default="true" id="54f5628b-7bd0-4773-8aa6-1113c09f74c6" name="Default Changelist" comment="datatables yapısı" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +62,7 @@
       <workItem from="1611139933068" duration="6662000" />
       <workItem from="1611252861465" duration="675000" />
       <workItem from="1611500370009" duration="955000" />
-      <workItem from="1611501406473" duration="1306000" />
+      <workItem from="1611501406473" duration="1609000" />
     </task>
     <task id="LOCAL-00001" summary="elber first commit">
       <created>1608661473217</created>
@@ -98,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610192304540</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="datatables yapısı">
+      <created>1611509258133</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611509258133</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +123,8 @@
     <MESSAGE value="elber second commit" />
     <MESSAGE value="theme optional commit" />
     <MESSAGE value="select2 fremework added" />
-    <option name="LAST_COMMIT_MESSAGE" value="select2 fremework added" />
+    <MESSAGE value="datatables yapısı" />
+    <option name="LAST_COMMIT_MESSAGE" value="datatables yapısı" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1032" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611501846788">
@@ -153,10 +155,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611141149093" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610192325655">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1611509259606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610192325655" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1611509259606" />
     <state x="823" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1610186441454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
