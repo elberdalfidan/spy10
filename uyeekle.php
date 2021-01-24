@@ -1,3 +1,6 @@
+<?php
+include("controller/config.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -294,7 +297,7 @@
                 <!-- Content Row -->
 
                     <!-- bootstrap form -->
-                    <form>
+                    <form method="post" action="">
                         <div class="col-12">
                             <div class="row">
                                 <div class="col-12 col-lg-6 col-xl-6 col-md-12">
@@ -353,15 +356,141 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div class="col-12 col-lg-12 col-xl-12 col-md-12">
+                                    <div class="form-group">
+                                        <h4>Komiteler</h4>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="cs" name="cs" value="1">
+                                                    <label class="form-check-label" for="cs">CS</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="ras" name="ras" value="1">
+                                                    <label class="form-check-label" for="ras">RAS</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="pes" name="pes" value="1">
+                                                    <label class="form-check-label" for="pes">PES</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="wie" name="wie" value="1">
+                                                    <label class="form-check-label" for="wie">WIE</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="embs" name="embs" value="1">
+                                                    <label class="form-check-label" for="embs">EMBS</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="basin" name="basin" value="1">
+                                                    <label class="form-check-label" for="basin">Basın ve Halka İlişkiler</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="ea" name="ea" value="1">
+                                                    <label class="form-check-label" for="ea">EA</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="egitim" name="egitim" value="1">
+                                                    <label class="form-check-label" for="egitim">Eğitim Seminer</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="kok" name="kok" value="1">
+                                                    <label class="form-check-label" for="kok">KOK</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="ras" name="ras" value="1">
+                                                    <label class="form-check-label" for="ras">RAS</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="sosyal" name="sosyal" value="1">
+                                                    <label class="form-check-label" for="sosyal">Sosyal ve Kültürel</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="sponsorluk" name="sponsorluk" value="1">
+                                                    <label class="form-check-label" for="sponsorluk">Sponsorluk</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="teknik-gezi" name="teknik-gezi" value="1">
+                                                    <label class="form-check-label" for="teknik-gezi">Teknik Gezi</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="yayin-tasarim" name="yayin-tasarim" value="1">
+                                                    <label class="form-check-label" for="yayin-tasarim">Yayın Tasarım</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <input type="submit" value="Ekle" class="btn btn-primary">
                             </div>
                         </div>
                     </form>
-                    <!-- end of bootstrap form -->
 
+                    <!-- end of bootstrap form -->
             </div>
             <!-- /.container-fluid -->
 
         </div>
+        <?php
+        if($_POST){
+            $ad = $_POST['uye-adi'];
+            $soyad = $_POST['uye-soyad'];
+            $tc = $_POST['uye-tc'];
+            $eposta = $_POST['uye-eposta'];
+            $telefon = $_POST['uye-telefon'];
+            $bolum = $_POST['uye-bolum'];
+            $sinif = $_POST['uye-sinif'];
+            $cinsiyet = $_POST['uye-cinsiyet'];
+            $cs = isset($_POST['cs']) ? 1 : 0;
+            $ras = isset($_POST['ras']) ? 1 : 0;
+            $pes = isset($_POST['pes']) ? 1 : 0;
+            $wie = isset($_POST['wie']) ? 1 : 0;
+            $embs = isset($_POST['embs']) ? 1 : 0;
+            $basin = isset($_POST['basin']) ? 1 : 0;
+            $ea = isset($_POST['ea']) ? 1 : 0;
+            $egitim = isset($_POST['egitim']) ? 1 : 0;
+            $kok = isset($_POST['kok']) ? 1 : 0;
+            $sosyal = isset($_POST['sosyal']) ? 1 : 0;
+            $sponsorluk = isset($_POST['sponsorluk']) ? 1 : 0;
+            $teknikGezi = isset($_POST['teknik-gezi']) ? 1 : 0;
+            $yayinTasarim = isset($_POST['yayin-tasarim']) ? 1 : 0;
+            if($ad<>"" && $soyad<>"" && $tc<>"" && $eposta<>""){
+                if($baglanti->query("INSERT INTO uyeler (uye_ad, uye_soyad, uye_tc, uye_eposta, uye_telefon, uye_bolum, uye_sinif, uye_cinsiyet, cs, ras, pes, wie, embs, basin, ea, egitim_seminer, kok, sosyal_kulturel, sponsorluk, teknik_gezi, yayin_tasarim) VALUES ('$ad','$soyad','$tc','$eposta','$telefon','$bolum','$sinif','$cinsiyet','$cs','$ras','$pes','$wie','$embs','$basin','$ea','$egitim','$kok','$sosyal','$sponsorluk','$teknikGezi','$yayinTasarim')")){
+                    echo "Veri Eklendi";
+                }else{
+                    echo "HATA";
+                }
+            }
+        }
+        ?>
         <!-- End of Main Content -->
 
         <!-- Footer -->
